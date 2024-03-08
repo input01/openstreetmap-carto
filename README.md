@@ -1,3 +1,4 @@
+rm -rf /var/cache/renderd/tiles/* && rm -rf /home/renderer/src/openstreetmap-carto/mapnik.xml
 # OpenStreetMap Carto
 
 ![screenshot](https://raw.github.com/gravitystorm/openstreetmap-carto/master/preview.png)
