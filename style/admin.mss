@@ -32,8 +32,9 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
       background/line-color: white;
       background/line-width: 1.2;
       line-join: bevel;
-      line-color: @admin-boundaries;
+      line-color: #00ff00;
       line-width: 1.2;
+      opacity: 0.0;
     }
     [zoom >= 5] {
       background/line-width: 1.5;
@@ -57,7 +58,6 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
     }
     [zoom >= 10] {
       background/line-width: 4.5;
-      line-color: @admin-boundaries-wide;
       line-width: 4.5;
     }
     [zoom >= 11] {
@@ -83,8 +83,9 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
       background/line-color: white;
       background/line-width: 0.6;
       thin/line-join: bevel;
-      thin/line-color: @admin-boundaries-narrow;
+      thin/line-color: #0000ff;
       thin/line-width: 0.6;
+      opacity: 0.0;
     }
     [zoom >= 9] {
       background/line-width: 0.8;
@@ -302,9 +303,6 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
       thin/line-dasharray: 16,4,3,4,3,4;
     }
   }
-  ::firstline { opacity: 0.5; }
-  ::wideline { opacity: 0.5; }
-  ::narrowline { opacity: 0.6; }
   /*
   The following code prevents admin boundaries from being rendered on top of
   each other. Comp-op works on the entire attachment, not on the individual
